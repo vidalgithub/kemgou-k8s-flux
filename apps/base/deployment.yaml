@@ -8,7 +8,7 @@ metadata:
   name: block-buster
   namespace: 8-demo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: block-buster
@@ -50,4 +50,3 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: spec.nodeName
-                  
