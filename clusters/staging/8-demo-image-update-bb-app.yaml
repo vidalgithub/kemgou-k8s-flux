@@ -20,5 +20,5 @@ spec:
     kind: GitRepository
     name: 8-demo-source-git-bb-app
   update:
-    path: ./apps/base
+    path: ./clusters/staging  #./apps/base
     strategy: Setters
