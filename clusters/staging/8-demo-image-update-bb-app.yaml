@@ -18,7 +18,7 @@ spec:
   interval: 30s
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: 8-demo-source-git-bb-app
   update:
-    path: ./clusters/staging
+    path: ./apps/base
     strategy: Setters
