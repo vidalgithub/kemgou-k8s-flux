@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: 8-demo-source-git-bb-app
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: 8-demo-git-bb-app-auth
+  url: ssh://git@github.com/vidalgithub/kemgou-k8s-flux.git
